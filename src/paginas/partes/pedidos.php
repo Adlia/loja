@@ -3,9 +3,7 @@ include_once('../config/MyPDO.php');
 
 $pedidos = MyPDO::executa_sql('SELECT * FROM pedidos');
 ?>
-
 <h2>Pedidos</h2>
-
 <div class="pedidos">
 <?php
     if (count($pedidos) == 0) {
@@ -90,8 +88,5 @@ $pedidos = MyPDO::executa_sql('SELECT * FROM pedidos');
             </form>
         </div>
     </div>
-<?php
-    }
-}
-?>
 </div>
+    <?php } } ?>

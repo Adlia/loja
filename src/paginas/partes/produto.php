@@ -64,7 +64,9 @@
                 <img src="../assets/imgs/produtos/<?php echo $produto->imagem; ?>">
                 <span><?php echo $produto->nome; ?></span>
                 <span><?php echo 'R$ '.str_replace('.', ',', $produto->preco); ?></span>
-                <a href="/produto/<?php echo $produto->id; ?>">Comprar</a>
+                <form action="produto/<?php echo $produto->id; ?>">
+                    <button type="submit" >Comprar</button>
+                </form>
             </div>
         <?php
             }

@@ -19,7 +19,7 @@ if (isset($_SESSION['usuario']) && $_SESSION['usuario']->nivel != 'ADMIN') {
 
     <?php
     if ($_SERVER['REQUEST_URI'] == '/painel') {
-        echo '<link rel="stylesheet" href="./assets/css/painel.css?v='.rand().'">
+        echo '<link rel="stylesheet" href="./assets/css/painel.css"?v='.rand().'">
             <link rel="stylesheet" href="./assets/css/base.css?v='.rand().'">';
     } else {
         echo '<link rel="stylesheet" href="../assets/css/painel.css?v='.rand().'">
